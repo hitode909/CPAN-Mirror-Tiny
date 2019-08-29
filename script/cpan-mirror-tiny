@@ -71,7 +71,7 @@ Check your darkpan with C<list> command:
 Now your darkpan has your own distributions. Let's install distributions with
 CPAN client L<cpm>:
 
-  $ cpm install --resover 02packages,file://$PWD/darkpan --resover metadb Your::Module
+  $ cpm install --resolver 02packages,file://$PWD/darkpan --resolver metadb Your::Module
 
 =head2 HTTP SERVER
 
@@ -82,7 +82,7 @@ If you want to use your darkpan in other hosts, run a http server first:
 
 Then
 
-  [host2]$ cpm install --resover 02packages,http://host1:5000 --resover metadb Your::Module
+  [host2]$ cpm install --resolver 02packages,http://host1:5000 --resolver metadb Your::Module
 
 Moreover you can inject/upload your modules against C<http://host1:5000/upload>:
 
